@@ -8,7 +8,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django-datepicker’,
+    name='django-datepicker',
     version='0.1',
     packages=find_packages(),
     include_package_data=True,
@@ -16,6 +16,8 @@ setup(
     description='A simple Django app to conduct Web-based polls.',
     long_description=README,
     url='https://www.example.com/',
+    packages=[
+        'datepicker'],
     author=‘Sheya Berntein’,
     author_email=‘sheya@sheyabernstein.com',
     classifiers=[
